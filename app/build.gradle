@@ -1,0 +1,42 @@
+group 'io.egreen.newsmaster.agrigator'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://dl.bintray.com/michaelklishin/maven/"
+    }
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.8'
+
+// RSS FEED READER
+    // https://mvnrepository.com/artifact/com.rometools/rome-modules
+    compile group: 'com.rometools', name: 'rome-modules', version: '1.7.1'
+
+    compile 'com.rometools:rome:1.7.1'
+// https://mvnrepository.com/artifact/org.quartz-scheduler/quartz
+    compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.2.3'
+    compile "com.novemberain:quartz-mongodb:2.0.0"
+
+    compile 'org.mongodb.morphia:morphia:1.3.2'
+    compile "io.reactivex.rxjava2:rxjava:2.0.8"
+    // https://mvnrepository.com/artifact/io.reactivex/rxscala_2.11
+    compile group: 'io.reactivex', name: 'rxscala_2.11', version: '0.26.5'
+
+    // https://mvnrepository.com/artifact/com.mashape.unirest/unirest-java
+    compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.9'
+
+
+
+    testCompile 'org.scalatest:scalatest_2.11:3.0.0'
+    testCompile 'junit:junit:4.12'
+}
+
+task execute(type: JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+}

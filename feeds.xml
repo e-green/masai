@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feeds>
+    <feed>
+        <url>http://feeds.bbci.co.uk/news/rss.xml</url>
+        <source>
+            <tag>BBC</tag>
+            <name>BBC News - Home website.</name>
+            <description>This is an RSS feed from the BBC News - Home website. RSS feeds allow you to stay up to date with the latest news and features you want from BBC News - Home.
+                To subscribe to it, you will need a News Reader or other similar device. If you would like to use this feed to display BBC News - Home content on your site, please go here.</description>
+        </source>
+        <interval>10</interval>
+    </feed>
+
+    <feed>
+        <url>http://rssfeeds.usatoday.com/usatoday-NewsTopStories</url>
+        <source>
+            <tag>USATODAY</tag>
+            <name>USATODAY - News Top Stories</name>
+            <description>
+                This feed's current articles are shown below. Subscribe for updates to all the content available in this feed, or click through here to see the original article.
+            </description>
+        </source>
+        <interval>10</interval>
+    </feed>
+
+    <feed>
+        <url>http://www.aljazeera.com/xml/rss/all.xml
+        </url>
+        <source>
+            <tag>ALJAZEERA</tag>
+            <name>Al Jazeera English
+            </name>
+            <description>
+                Al Jazeera Media Network
+            </description>
+        </source>
+        <interval>10</interval>
+    </feed>
+    <feed>
+        <url>http://rss.upi.com/news/news.rss
+
+        </url>
+        <source>
+            <tag>UPICOM</tag>
+            <name>Latest News - UPI.com
+
+            </name>
+            <description>
+                Copyright (c) 2017 United Press International, Inc. All Rights Reserved.
+            </description>
+        </source>
+        <interval>10</interval>
+    </feed>
+
+
+
+    <feed>
+        <url>http://rss.cnn.com/rss/edition.rss</url>
+        <source>
+            <tag>CNN</tag>
+            <name>CNN - Top News</name>
+            <description>CNN.com - RSS Channel - Intl Homepage - News</description>
+        </source>
+        <interval>1</interval>
+    </feed>
+</feeds>
